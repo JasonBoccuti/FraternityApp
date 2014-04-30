@@ -1,5 +1,5 @@
 //
-//  EventsCell.h
+//  LoginView.h
 //  SinfoniaApp
 //
 //  Created by Jason Boccuti on 4/29/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventsCell : UITableViewCell
-
-@property (weak, nonatomic) IBOutlet UILabel *cellTitle;
+@interface LoginView : UIView
 
 @end

@@ -12,6 +12,10 @@
 		9603BB11190F677C00778D1D /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9603BB10190F677C00778D1D /* EventsViewController.m */; };
 		96B5CD01190EB6E60072B182 /* dark_linen-640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B5CD00190EB6E60072B182 /* dark_linen-640x960.png */; };
 		96B5CD03190F088D0072B182 /* Crest.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B5CD02190F088D0072B182 /* Crest.png */; };
+		96B5CD07191031ED0072B182 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B5CD04191031ED0072B182 /* calendar@2x.png */; };
+		96B5CD08191031ED0072B182 /* pinion1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B5CD05191031ED0072B182 /* pinion1@2x.png */; };
+		96B5CD09191031ED0072B182 /* user3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B5CD06191031ED0072B182 /* user3@2x.png */; };
+		96B5CD0C191038920072B182 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B5CD0B191038920072B182 /* LoginView.m */; };
 		96BB9600190E145B003DD39C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BB95FF190E145B003DD39C /* Foundation.framework */; };
 		96BB9602190E145B003DD39C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BB9601190E145B003DD39C /* CoreGraphics.framework */; };
 		96BB9604190E145B003DD39C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BB9603190E145B003DD39C /* UIKit.framework */; };
@@ -60,6 +64,11 @@
 		9603BB10190F677C00778D1D /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
 		96B5CD00190EB6E60072B182 /* dark_linen-640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dark_linen-640x960.png"; sourceTree = "<group>"; };
 		96B5CD02190F088D0072B182 /* Crest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crest.png; sourceTree = "<group>"; };
+		96B5CD04191031ED0072B182 /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
+		96B5CD05191031ED0072B182 /* pinion1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinion1@2x.png"; sourceTree = "<group>"; };
+		96B5CD06191031ED0072B182 /* user3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user3@2x.png"; sourceTree = "<group>"; };
+		96B5CD0A191038920072B182 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		96B5CD0B191038920072B182 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		96BB95FC190E145B003DD39C /* SinfoniaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinfoniaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BB95FF190E145B003DD39C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96BB9601190E145B003DD39C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -180,9 +189,14 @@
 			isa = PBXGroup;
 			children = (
 				96B5CD02190F088D0072B182 /* Crest.png */,
+				96B5CD04191031ED0072B182 /* calendar@2x.png */,
+				96B5CD05191031ED0072B182 /* pinion1@2x.png */,
+				96B5CD06191031ED0072B182 /* user3@2x.png */,
 				96BB964F190E22C8003DD39C /* Main.storyboard */,
 				96BB960E190E145B003DD39C /* AppDelegate.h */,
 				96BB960F190E145B003DD39C /* AppDelegate.m */,
+				96B5CD0A191038920072B182 /* LoginView.h */,
+				96B5CD0B191038920072B182 /* LoginView.m */,
 				96BB9614190E145B003DD39C /* LoginViewController.h */,
 				96BB9615190E145B003DD39C /* LoginViewController.m */,
 				96BB965C190F454D003DD39C /* GroupCell.h */,
@@ -309,8 +323,11 @@
 			files = (
 				96B5CD03190F088D0072B182 /* Crest.png in Resources */,
 				96BB9650190E22C8003DD39C /* Main.storyboard in Resources */,
+				96B5CD08191031ED0072B182 /* pinion1@2x.png in Resources */,
+				96B5CD09191031ED0072B182 /* user3@2x.png in Resources */,
 				96BB9618190E145B003DD39C /* Images.xcassets in Resources */,
 				96B5CD01190EB6E60072B182 /* dark_linen-640x960.png in Resources */,
+				96B5CD07191031ED0072B182 /* calendar@2x.png in Resources */,
 				96BB960A190E145B003DD39C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +350,7 @@
 				96BB9616190E145B003DD39C /* LoginViewController.m in Sources */,
 				9603BAC4190F662300778D1D /* EventsCell.m in Sources */,
 				96BB965B190F43B4003DD39C /* GroupViewController.m in Sources */,
+				96B5CD0C191038920072B182 /* LoginView.m in Sources */,
 				96BB9653190E231E003DD39C /* EditProfileViewController.m in Sources */,
 				96BB965E190F454D003DD39C /* GroupCell.m in Sources */,
 				9603BB11190F677C00778D1D /* EventsViewController.m in Sources */,

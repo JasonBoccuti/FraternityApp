@@ -175,20 +175,23 @@
     }];
 }
 
-
 // Dismiss the Keyboard
-- (BOOL) textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return YES;
-}
-
-// White Status Bar
-- (UIStatusBarStyle)preferredStatusBarStyle
+-(BOOL)textFieldShouldReturn:(UITextField*)textField;
 {
-    return UIStatusBarStyleLightContent;
+    NSInteger nextTag = textField.tag + 1;
+    // Try to find next responder
+    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
+    if (nextResponder) {
+        // Found next responder, so set it.
+        [nextResponder becomeFirstResponder];
+    } else {
+        // Not found, so remove keyboard.
+        [textField resignFirstResponder];
+    }
+    return NO; // We do not want UITextField to insert line-breaks.
 }
 
-
+// Shift view up to make room for keyboard
 - (BOOL) textFieldShouldBeginEditing:(UITextField *)textField {
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.35f];
@@ -198,10 +201,12 @@
     [self.view setFrame:frame];
     
     [UIView commitAnimations];
+    
     return YES;
 }
 
-- (BOOL) textFieldShouldEndEditing:(UITextField *)textField{
+// Shift view down when keyboard dismisses
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.35f];
     
@@ -214,4 +219,9 @@
 }
 
 
+// White Status Bar
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 @end
